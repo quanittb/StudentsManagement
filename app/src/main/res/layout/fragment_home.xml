@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingHorizontal="@dimen/_8sdp"
+    android:paddingVertical="@dimen/_8sdp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_function"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Tính năng"
+                android:textColor="@color/primary_color_PH"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ln_function"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="2dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_function">
+
+                <com.google.android.material.circularreveal.CircularRevealGridLayout
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/bg_corner_20_white_top"
+                        android:backgroundTint="@color/white"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_tkb"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- Icon -->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/ic_calendar" />
+
+                            <!-- Text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Thời khoá biểu"
+                                android:textColor="@color/primary_color_PH"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/bg_corner_20_white_top"
+                        android:backgroundTint="@android:color/white"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_nghiphep"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- Icon -->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/ic_request_leave" />
+
+                            <!-- Text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Nghỉ phép"
+                                android:textColor="@color/primary_color_PH"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="3"
+                        android:layout_columnWeight="1"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/bg_corner_20_white_top"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_hocthem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- Icon -->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/ic_additional_learning" />
+
+                            <!-- Text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Học thêm"
+                                android:textColor="@color/primary_color_PH"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="1"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/bg_corner_20_white_bottom"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_lichthi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- Icon -->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/ic_additional_learning" />
+
+                            <!-- Text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Lịch thi"
+                                android:textColor="@color/primary_color_PH"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="2"
+                        android:layout_columnWeight="1"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/bg_corner_20_white_bottom"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:id="@+id/btn_hocphi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- Icon -->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/ic_bill" />
+
+                            <!-- Text -->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Học phí"
+                                android:textColor="@color/primary_color_PH"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_row="2"
+                        android:layout_rowWeight="1"
+                        android:layout_column="3"
+                        android:layout_columnWeight="1"
+                        android:backgroundTint="@color/white"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:background="@drawable/bg_corner_20_white_bottom"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <!-- Icon -->
+                            <ImageView
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/ic_add_function" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </com.google.android.material.circularreveal.CircularRevealGridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_excercise_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Lịch kiểm tra trong tuần"
+                android:textColor="@color/primary_color_PH"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ln_function" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ln_ex_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="4dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_excercise_calendar">
+
+                <com.google.android.material.circularreveal.CircularRevealGridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:elevation="@dimen/_4sdp"
+                        android:fontFamily="@font/inter_regular"
+                        android:lineSpacingExtra="@dimen/_4sdp"
+                        android:text="13/11/2024 \n2h30 - 2h45 P.M"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="1"
+                        android:layout_rowWeight="1"
+                        android:layout_column="3"
+                        android:layout_columnWeight="3"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/inter_semibolditalic"
+                        android:lineSpacingExtra="@dimen/_4sdp"
+                        android:text="Kiểm tra 15 phút môn Vật Lý"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="3"
+                        android:layout_rowWeight="1"
+                        android:layout_column="1"
+                        android:layout_columnWeight="2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:elevation="@dimen/_4sdp"
+                        android:fontFamily="@font/inter_regular"
+                        android:lineSpacingExtra="@dimen/_4sdp"
+                        android:text="13/11/2024 \n2h30 - 2h45 P.M"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_row="3"
+                        android:layout_rowWeight="1"
+                        android:layout_column="3"
+                        android:layout_columnWeight="3"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/inter_semibolditalic"
+                        android:lineSpacingExtra="@dimen/_4sdp"
+                        android:text="Kiểm tra 15 phút môn Vật Lý"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="0dp"
+                        android:layout_row="1"
+                        android:layout_rowSpan="3"
+                        android:layout_rowWeight="2"
+                        android:layout_column="2"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:background="#E5E5E5" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:layout_columnSpan="3"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:background="#E5E5E5" />
+                </com.google.android.material.circularreveal.CircularRevealGridLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:paddingVertical="@dimen/_4sdp"
+                android:id="@+id/tv_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Bảng tin"
+                android:textColor="@color/primary_color_PH"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ln_ex_calendar" />
+            <ImageView
+                android:id="@+id/iv_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tv_news"
+                app:layout_constraintBottom_toBottomOf="@id/tv_news"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_140sdp"
+                tools:listitem="@layout/item_image"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_news" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

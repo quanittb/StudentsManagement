@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        />
+
+    <item android:id="@+id/action_learning"
+        android:title="@string/learning"
+        android:icon="@drawable/ic_learning_disable"
+        />
+    <item android:id="@+id/action_homework"
+        android:title="@string/homework"
+        android:icon="@drawable/ic_homework_disable"
+        />
+
+    <item android:id="@+id/action_account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account_disable" />
+</menu>

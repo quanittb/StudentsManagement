@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_14sdp"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:cardElevation="@dimen/_4sdp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/tv_title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_arrow_back_color"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/primary_color_PH"
+                android:text="Đăng ký học thêm"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/label_monhoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                android:text="Môn học thêm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"/>
+            <LinearLayout
+                android:id="@+id/ln_monhoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/label_monhoc"
+                app:layout_constraintLeft_toRightOf="@id/label_monhoc"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="#F5F5F5"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+                <TextView
+                    android:id="@+id/tv_toan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:text="Toán"
+                    android:padding="@dimen/_4sdp"
+                    android:drawableEnd="@drawable/ic_select_mon"
+                    android:drawablePadding="@dimen/_50sdp"/>
+                <TextView
+                    android:id="@+id/tv_ly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:text="Lý"
+                    android:padding="@dimen/_4sdp"
+                    android:drawableEnd="@drawable/ic_unselect_mon" />
+                <TextView
+                    android:id="@+id/tv_hoa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:text="Hóa"
+                    android:padding="@dimen/_4sdp"
+                    android:drawableEnd="@drawable/ic_unselect_mon" />
+                <TextView
+                    android:id="@+id/tv_van"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:text="Văn"
+                    android:padding="@dimen/_4sdp"
+                    android:drawableEnd="@drawable/ic_select_mon" />
+                <TextView
+                    android:id="@+id/tv_tienganh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="@dimen/_16ssp"
+                    android:textColor="@color/black"
+                    android:text="Tiếng Anh"
+                    android:padding="@dimen/_4sdp"
+
+                    android:drawableEnd="@drawable/ic_select_mon" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/label_mongmuon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ln_monhoc"
+                android:text="Mong muốn khác:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"/>
+            <EditText
+                android:id="@+id/ed_mongmuon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="10"
+                app:layout_constraintTop_toBottomOf="@id/label_mongmuon"
+                app:layout_constraintLeft_toLeftOf="@id/label_mongmuon"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:textAlignment="textStart"
+                android:background="#F5F5F5"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_16sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:background="@drawable/bg_corner_20_white"
+                android:backgroundTint="@color/primary_color_PH"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ed_mongmuon"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/white"
+                android:text="Gửi xác nhận"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

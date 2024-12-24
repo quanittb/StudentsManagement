@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.jetbrainsKotlinAndroid)
+}
+
+android {
+    namespace 'com.example.studentsmanagement'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.studentsmanagement"
+        minSdk 33
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding=true
+    }
+    viewBinding {
+        enabled true
+    }
+    dataBinding {
+        enabled true
+    }
+}
+
+dependencies {
+
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.appcompat.v161
+    implementation libs.material.v1110
+    implementation libs.androidx.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.androidx.junit.v115
+    androidTestImplementation libs.androidx.espresso.core.v351
+    implementation libs.ssp.android
+    implementation libs.sdp.android
+    implementation libs.glide
+    implementation libs.androidx.room.rxjava3
+    implementation libs.lottie
+    implementation libs.gson
+    // rxBUS
+    implementation libs.rxandroid
+    implementation libs.rxjava
+    implementation libs.circleimageview
+}

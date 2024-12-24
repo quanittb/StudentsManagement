@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_14sdp"
+        app:cardCornerRadius="@dimen/_14sdp"
+        app:cardElevation="@dimen/_4sdp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_back"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/tv_title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_arrow_back_color"/>
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/primary_color_PH"
+                android:text="Thông báo"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:text="Tuần 1 (01/12/2024 - 07/12/2024)"
+                android:background="@drawable/bg_corner_10_white"
+                android:backgroundTint="#80E5E5E5"
+                android:paddingHorizontal="@dimen/_6sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:drawableEnd="@drawable/ic_arrow_drop_down"
+                android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/ln_day"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_16sdp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:elevation="@dimen/_4sdp"
+                    android:text="@string/_01_ncn"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day_select"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:elevation="@dimen/_6sdp"
+                    android:text="@string/_02_nt2" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:elevation="@dimen/_4sdp"
+                    android:background="@drawable/bg_day"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:text="@string/_03_nt3"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:elevation="@dimen/_4sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:text="@string/_04_nt4"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:elevation="@dimen/_4sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:text="@string/_05_nt5"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_day"
+                    android:gravity="center"
+                    android:elevation="@dimen/_4sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="@string/_06_nt6"/>
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/ln_detail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ln_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_stt_tkb"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_corner_10_white"
+                        android:backgroundTint="#80E5E5E5"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Toán"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_stt_tkb"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_row="2"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_corner_10_white"
+                        android:backgroundTint="#80E5E5E5"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Toán"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_stt_tkb"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_row="3"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_corner_10_white"
+                        android:backgroundTint="#80E5E5E5"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Lịch sử"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_stt_tkb"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_row="4"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_corner_10_white"
+                        android:backgroundTint="#80E5E5E5"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Ngữ Văn"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_row="5"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_stt_tkb"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_row="5"
+                    android:layout_rowWeight="1"
+                    android:layout_column="2"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_corner_10_white"
+                        android:backgroundTint="#80E5E5E5"
+                        android:fontFamily="@font/inter_medium"
+                        android:gravity="center"
+                        android:text="Vật lý"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_columnSpan="6"
+                    android:layout_marginTop="@dimen/_4sdp"/>
+            </GridLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

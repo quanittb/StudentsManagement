@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/ic_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_arrow_back_color"/>
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/primary_color_PH"
+        android:text="Cài đặt"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_8sdp"/>
+    <LinearLayout
+        android:id="@+id/ln_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        android:background="@drawable/bg_corner_10_white"
+        android:paddingVertical="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:elevation="@dimen/_2sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bảo mật tài khoản"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_arrow_right"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý tài khoản"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#80000000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhận diện khuôn mặt"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#80000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ln_security"
+        android:background="@drawable/bg_corner_10_white"
+        android:paddingVertical="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:elevation="@dimen/_2sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngôn ngữ"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_arrow_right"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngôn ngữ ứng dụng"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#80000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_not"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ln_lang"
+        android:background="@drawable/bg_corner_10_white"
+        android:paddingVertical="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:elevation="@dimen/_2sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông báo"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_turn_on"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhận thông báo"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#80000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_dark_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ln_not"
+        android:background="@drawable/bg_corner_10_white"
+        android:paddingVertical="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_marginHorizontal="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:elevation="@dimen/_2sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_dark_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chế độ tối"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/ic_turn_off"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sử dụng nền tối"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#80000000" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

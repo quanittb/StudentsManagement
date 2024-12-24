@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Schoolink</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_spain" translatable="false">Spanish</string>
+    <string name="language_portugal" translatable="false">Portuguese</string>
+    <string name="language_vietnam" translatable="false">Vietnamese</string>
+    <string name="language_hindi" translatable="false">भारतीय भाषा</string>
+    <string name="language_germany" translatable="false">German</string>
+    <string name="language_brazil" translatable="false">Lingua Brasilia</string>
+    <string name="language_japan" translatable="false">日本</string>
+    <string name="language_korean" translatable="false">Korean</string>
+    <string name="language_france" translatable="false">French</string>
+    <string name="language_china" translatable="false">中国人</string>
+    <string name="languages" translatable="false">Language</string>
+    <string name="m_otp_s_h_t_h_n_sau_22s">Mã OTP sẽ hết hạn sau: <b>22s</b></string>
+    <string name="b_n_ch_a_nh_n_c_m_g_i_l_i_ngay">Bạn chưa nhận được mã? <font color="#0077B6">Gửi lại ngay!</font></string>
+    <string name="home">Trang chủ</string>
+    <string name="learning">Học tập</string>
+    <string name="homework">Bài tập</string>
+    <string name="account">Tài khoản</string>
+    <string name="_01_ncn"><b>01</b>\nCN</string>
+    <string name="_02_nt2"><b>02</b>\nTh 2</string>
+    <string name="_03_nt3"><b>03</b>\nTh 3</string>
+    <string name="_04_nt4"><b>04</b>\nTh 4</string>
+    <string name="_05_nt5"><b>05</b>\nTh 5</string>
+    <string name="_06_nt6"><b>06</b>\nTh 6</string>
+    <string name="l_ch_s_giao_d_ch"><u>Lịch sử giao dịch</u></string>
+    <string name="th_ng_b_o_h_p_ph_huynh_h_c_k_i_k_nh_g_i_qu_ph_huynh_theo_k_ho_ch_n_m_h_c_nh_tr_ng_s_t_ch_c_cu_c_h_p_ph_huynh_h_c_k_i_v_o_l_c_16h00_ng_y_12_12_2024_t_i_c_c_ph_ng_h_c_c_a_t_ng_l_p_n_i_dung_cu_c_h_p_b_o_c_o_t_nh_h_nh_h_c_t_p_v_r_n_luy_n_c_a_h_c_sinh_th_ng_tin_v_k_ho_ch_h_c_t_p_h_c_k_ii_th_o_lu_n_v_gi_i_p_ki_n_t_ph_huynh_k_nh_mong_qu_ph_huynh_s_p_x_p_th_i_gian_n_tham_d_y_v_ng_gi_c_ng_nh_tr_ng_t_o_i_u_ki_n_h_c_t_p_t_t_nh_t_cho_c_c_em_h_c_sinh_tr_n_tr_ng_c_m_n">THÔNG BÁO HỌP PHỤ HUYNH HỌC KỲ I \nKính gửi Quý phụ huynh, Theo kế hoạch năm học, nhà trường sẽ tổ chức cuộc họp phụ huynh học kỳ I vào lúc 16h00 ngày 12/12/2024 tại các phòng học của từng lớp. \nNội dung cuộc họp: \n* Báo cáo tình hình học tập và rèn luyện của học sinh. \n* Thông tin về kế hoạch học tập học kỳ II. \n*Thảo luận và giải đáp ý kiến từ phụ huynh. \nKính mong Quý phụ huynh sắp xếp thời gian đến tham dự đầy đủ và đúng giờ để cùng nhà trường tạo điều kiện học tập tốt nhất cho các em học sinh. Trân trọng cảm ơn!</string>
+</resources>
